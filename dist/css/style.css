@@ -7,4 +7,63 @@
 body {
   background: #333;
   color: #fff;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+li {
+  list-style: none;
+}
+
+/* Utility */
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+/* Nav */
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#main-nav ul {
+  display: flex;
+  align-self: center;
+}
+
+#main-nav ul li {
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-nav ul li:hover {
+  cursor: pointer;
+  color: tan;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#showcase:before {
+  content: '';
+  background: url('https://source.unsplash.com/WLUHO9A_xik/1600x900') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
 }
